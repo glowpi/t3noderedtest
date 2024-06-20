@@ -1,0 +1,1667 @@
+[
+    {
+        "id": "b9a2aa1400b71962",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3ba3226464e8f2c6",
+        "type": "tab",
+        "label": "RS DataVis",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "570666fd35b0f52c",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b1176b865b8cd3e5",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "63ba88bdf3bb3629",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "52201046a8ce3dd1",
+        "type": "tab",
+        "label": "Flow 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e10257a0de94ab8c",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "490a816ad894c553",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6aeff68484b67e57",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "e10257a0de94ab8c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8d7cd0068edd9638",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "744ade9a0881454c",
+        "type": "ui_group",
+        "name": "Data",
+        "tab": "e10257a0de94ab8c",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b445225a8ce86cbb",
+        "type": "telegram bot",
+        "botname": "rsudpAlertBot",
+        "usernames": "",
+        "chatids": "-793588461",
+        "baseapiurl": "https://api.telegram.org",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "7aacb242e5cf2c3f",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "244460bfd7da9740",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "7aacb242e5cf2c3f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fd366e8834c12f83",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9381dd33e353c284",
+        "type": "chatbot-telegram-node",
+        "botname": "",
+        "usernames": "",
+        "polling": "1000",
+        "store": "",
+        "log": "",
+        "debug": false,
+        "skipMediaFiles": false,
+        "webHook": "",
+        "connectMode": "polling",
+        "storeMessages": true,
+        "enableMissionControl": false,
+        "inspectMessages": true,
+        "chatbotId": ""
+    },
+    {
+        "id": "f56121f9b2e35243",
+        "type": "telegram bot",
+        "botname": "",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "e823e5d644ada045",
+        "type": "telegram bot",
+        "botname": "@Bethel_new_bot",
+        "usernames": "",
+        "chatids": "-837340870",
+        "baseapiurl": "",
+        "updatemode": "none",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "0c211b696d399bc0",
+        "type": "telegrambot-config",
+        "botname": "New Bot",
+        "usernames": "",
+        "chatIds": "",
+        "pollInterval": "300"
+    },
+    {
+        "id": "31de0d13a047a1fc",
+        "type": "mqtt in",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "topic": "ShakeChallenge2023/R8F48",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8d7cd0068edd9638",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 160,
+        "wires": [
+            [
+                "6ad8d02fcddbac5a"
+            ]
+        ]
+    },
+    {
+        "id": "6ad8d02fcddbac5a",
+        "type": "function",
+        "z": "b9a2aa1400b71962",
+        "name": "Absolute Amplitude",
+        "func": "var acc = 0;\nvar num = 0;\nfor(const p of msg.payload.packets)\n{\n    acc += Math.abs(p);\n    num++;\n}\n\nacc /= num;\n\nmsg.payload = acc;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 220,
+        "wires": [
+            [
+                "e5798defffbdb2fb",
+                "02d0e117caf9a82b",
+                "4f96fa3848b9cafc"
+            ]
+        ]
+    },
+    {
+        "id": "e5798defffbdb2fb",
+        "type": "smooth",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "25",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 940,
+        "y": 360,
+        "wires": [
+            [
+                "02d0e117caf9a82b"
+            ]
+        ]
+    },
+    {
+        "id": "02d0e117caf9a82b",
+        "type": "switch",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "50000",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 970,
+        "y": 240,
+        "wires": [
+            [
+                "2701e61abc983cb4"
+            ]
+        ]
+    },
+    {
+        "id": "8dbac5cc99ec96ee",
+        "type": "change",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ALERT! Earthquake",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 520,
+        "wires": [
+            [
+                "62914ce6a82be292",
+                "03e4da91ee49d92e"
+            ]
+        ]
+    },
+    {
+        "id": "62914ce6a82be292",
+        "type": "ui_audio",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "group": "6aeff68484b67e57",
+        "voice": "Samantha",
+        "always": true,
+        "x": 1200,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "03e4da91ee49d92e",
+        "type": "ui_toast",
+        "z": "b9a2aa1400b71962",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1050,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "2701e61abc983cb4",
+        "type": "delay",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "10",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1060,
+        "y": 200,
+        "wires": [
+            [
+                "8dbac5cc99ec96ee"
+            ]
+        ]
+    },
+    {
+        "id": "1d47f4544917be18",
+        "type": "debug",
+        "z": "b9a2aa1400b71962",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4f96fa3848b9cafc",
+        "type": "ui_gauge",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "group": "6aeff68484b67e57",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "R8F48 Shakemeter",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d0e2f0b32331c61c",
+        "type": "rshake-udp-parser",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "299110c.a2af7f",
+                "d5d2efbb.2600e"
+            ]
+        ]
+    },
+    {
+        "id": "299110c.a2af7f",
+        "type": "function",
+        "z": "b9a2aa1400b71962",
+        "name": "format plot values",
+        "func": "\nvar EVERY_N_PACKET = 20; // max = 24\nvar POINTS_PER_SECOND = 100 / EVERY_N_PACKET;\nvar KEEP_SECONDS = 60;\nvar KEY=\"f2_all_points\";\n\nvar MAX_POINTS = POINTS_PER_SECOND * KEEP_SECONDS;\n\nvar input = msg.payload;\n\nvar data = [{series:[\"P\"],\n    data:[],\n    labels:[\"Points\"]\n}];\n\nvar allPoints = flow.get(KEY);\nif(allPoints == undefined)\n    allPoints = [];\n\n\nfor(var i=0, step=EVERY_N_PACKET; i + step < input.packets.length; i += step) {\n    var o = {x: input.ts + i*10,\n             y: input.packets[i]};\n    allPoints.push(o);\n}\n\nif(allPoints.length > MAX_POINTS)\n    allPoints = allPoints.slice(\n        allPoints.length - MAX_POINTS, \n        allPoints.length\n    );\n\nflow.set(KEY, allPoints);\n\ndata[0].data.push(allPoints);\n\n\nmsg.payload = data;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 600,
+        "wires": [
+            [
+                "7fedda9c9985f477"
+            ]
+        ]
+    },
+    {
+        "id": "d5d2efbb.2600e",
+        "type": "function",
+        "z": "b9a2aa1400b71962",
+        "name": "Absolute Amplitude",
+        "func": "var acc = 0;\nvar num = 0;\nfor(const p of msg.payload.packets)\n{\n    acc += Math.abs(p);\n    num++;\n}\n\nacc /= num;\n\nmsg.payload = acc;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 460,
+        "wires": [
+            [
+                "c8911fad.47f72",
+                "9dda7d821fc224ae",
+                "13d75697c276f99e"
+            ]
+        ]
+    },
+    {
+        "id": "c8911fad.47f72",
+        "type": "smooth",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "25",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 520,
+        "y": 640,
+        "wires": [
+            [
+                "9dda7d821fc224ae"
+            ]
+        ]
+    },
+    {
+        "id": "9dda7d821fc224ae",
+        "type": "switch",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "50000",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 710,
+        "y": 600,
+        "wires": [
+            [
+                "c43344c95fb18f48"
+            ]
+        ]
+    },
+    {
+        "id": "45cad9488d4beb9e",
+        "type": "change",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ALERT! Earthquake",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 840,
+        "wires": [
+            [
+                "894b260a8ce02390",
+                "166a73360cb54b8c"
+            ]
+        ]
+    },
+    {
+        "id": "894b260a8ce02390",
+        "type": "ui_audio",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "group": "6aeff68484b67e57",
+        "voice": "Samantha",
+        "always": true,
+        "x": 1040,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "166a73360cb54b8c",
+        "type": "ui_toast",
+        "z": "b9a2aa1400b71962",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "Green",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 990,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "c43344c95fb18f48",
+        "type": "delay",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "10",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 720,
+        "y": 720,
+        "wires": [
+            [
+                "45cad9488d4beb9e"
+            ]
+        ]
+    },
+    {
+        "id": "4157742ec8c7227d",
+        "type": "udp in",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "iface": "",
+        "port": "8890",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 180,
+        "y": 260,
+        "wires": [
+            [
+                "d0e2f0b32331c61c"
+            ]
+        ]
+    },
+    {
+        "id": "7fedda9c9985f477",
+        "type": "ui_chart",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "group": "744ade9a0881454c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Live Data R1ADD",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d91717",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 470,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13d75697c276f99e",
+        "type": "ui_gauge",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "group": "744ade9a0881454c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "R1ADD Shakemeter",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 620,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "06360a34a331b285",
+        "type": "switch",
+        "z": "b9a2aa1400b71962",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "05d19767e2b09b08",
+        "type": "smooth",
+        "z": "3ba3226464e8f2c6",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "25",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 940,
+        "y": 160,
+        "wires": [
+            [
+                "6d2b82067b065d66",
+                "d6ac200823d989b0"
+            ]
+        ]
+    },
+    {
+        "id": "262c5c657212b568",
+        "type": "udp in",
+        "z": "3ba3226464e8f2c6",
+        "name": "",
+        "iface": "",
+        "port": "8888",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 80,
+        "y": 200,
+        "wires": [
+            [
+                "fe640356effafba5"
+            ]
+        ]
+    },
+    {
+        "id": "51d6c195e6a44bbd",
+        "type": "split",
+        "z": "3ba3226464e8f2c6",
+        "name": "",
+        "splt": ", ",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 350,
+        "y": 200,
+        "wires": [
+            [
+                "c137b2a1e0f9f627"
+            ]
+        ]
+    },
+    {
+        "id": "47a917c2b1c69807",
+        "type": "calculator",
+        "z": "3ba3226464e8f2c6",
+        "name": "",
+        "inputMsgField": "payload",
+        "outputMsgField": "payload",
+        "operation": "abs",
+        "constant": "",
+        "round": false,
+        "decimals": 0,
+        "x": 720,
+        "y": 200,
+        "wires": [
+            [
+                "05d19767e2b09b08"
+            ]
+        ]
+    },
+    {
+        "id": "c137b2a1e0f9f627",
+        "type": "switch",
+        "z": "3ba3226464e8f2c6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "100000000",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 510,
+        "y": 200,
+        "wires": [
+            [
+                "47a917c2b1c69807",
+                "75c5fb5e4449ec71",
+                "4c9416cf2119eed3"
+            ]
+        ]
+    },
+    {
+        "id": "fe640356effafba5",
+        "type": "switch",
+        "z": "3ba3226464e8f2c6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "EHZ",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 210,
+        "y": 200,
+        "wires": [
+            [
+                "51d6c195e6a44bbd"
+            ]
+        ]
+    },
+    {
+        "id": "aa67f3d9e3b2a870",
+        "type": "debug",
+        "z": "3ba3226464e8f2c6",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "75c5fb5e4449ec71",
+        "type": "ui_chart",
+        "z": "3ba3226464e8f2c6",
+        "name": "",
+        "group": "744ade9a0881454c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 790,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c9416cf2119eed3",
+        "type": "smooth",
+        "z": "3ba3226464e8f2c6",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "40",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 440,
+        "y": 320,
+        "wires": [
+            [
+                "75c5fb5e4449ec71"
+            ]
+        ]
+    },
+    {
+        "id": "6d2b82067b065d66",
+        "type": "switch",
+        "z": "3ba3226464e8f2c6",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "50000",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1070,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6ac200823d989b0",
+        "type": "ui_gauge",
+        "z": "3ba3226464e8f2c6",
+        "name": "",
+        "group": "744ade9a0881454c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Shakemeter",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1170,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d3f1611eef5920b5",
+        "type": "udp in",
+        "z": "570666fd35b0f52c",
+        "name": "",
+        "iface": "",
+        "port": "8888",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "buffer",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "3034378b6096086c",
+                "f6695a2ccd5f243a"
+            ]
+        ]
+    },
+    {
+        "id": "3034378b6096086c",
+        "type": "rshake-udp-parser",
+        "z": "570666fd35b0f52c",
+        "name": "",
+        "x": 480,
+        "y": 240,
+        "wires": [
+            [
+                "458281303d06716d",
+                "e7250e1138bbeb7b"
+            ]
+        ]
+    },
+    {
+        "id": "60eb2e54160ed3a5",
+        "type": "debug",
+        "z": "570666fd35b0f52c",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "458281303d06716d",
+        "type": "function",
+        "z": "570666fd35b0f52c",
+        "name": "format plot values",
+        "func": "\nvar EVERY_N_PACKET = 20; // max = 24\nvar POINTS_PER_SECOND = 100 / EVERY_N_PACKET;\nvar KEEP_SECONDS = 60;\nvar KEY=\"f2_all_points\";\n\nvar MAX_POINTS = POINTS_PER_SECOND * KEEP_SECONDS;\n\nvar input = msg.payload;\n\nvar data = [{series:[\"P\"],\n    data:[],\n    labels:[\"Points\"]\n}];\n\nvar allPoints = flow.get(KEY);\nif(allPoints == undefined)\n    allPoints = [];\n\n\nfor(var i=0, step=EVERY_N_PACKET; i + step < input.packets.length; i += step) {\n    var o = {x: input.ts + i*10,\n             y: input.packets[i]};\n    allPoints.push(o);\n}\n\nif(allPoints.length > MAX_POINTS)\n    allPoints = allPoints.slice(\n        allPoints.length - MAX_POINTS, \n        allPoints.length\n    );\n\nflow.set(KEY, allPoints);\n\ndata[0].data.push(allPoints);\n\n\nmsg.payload = data;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 340,
+        "wires": [
+            [
+                "8323577c94c27257"
+            ]
+        ]
+    },
+    {
+        "id": "8323577c94c27257",
+        "type": "ui_chart",
+        "z": "570666fd35b0f52c",
+        "name": "",
+        "group": "744ade9a0881454c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Seismic Data",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 890,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6695a2ccd5f243a",
+        "type": "mqtt out",
+        "z": "570666fd35b0f52c",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8d7cd0068edd9638",
+        "x": 730,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e7250e1138bbeb7b",
+        "type": "function",
+        "z": "570666fd35b0f52c",
+        "name": "Absolute Amplitude",
+        "func": "var acc = 0;\nvar num = 0;\nfor(const p of msg.payload.packets)\n{\n    acc += Math.abs(p);\n    num++;\n}\n\nacc /= num;\n\nmsg.payload = acc;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 420,
+        "wires": [
+            [
+                "afc7fdfa15d11392"
+            ]
+        ]
+    },
+    {
+        "id": "afc7fdfa15d11392",
+        "type": "ui_gauge",
+        "z": "570666fd35b0f52c",
+        "name": "",
+        "group": "744ade9a0881454c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Shakemeter",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 770,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "46d81969e7152bbd",
+        "type": "udp in",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "iface": "",
+        "port": "8888",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "2b852157060e7160"
+            ]
+        ]
+    },
+    {
+        "id": "b81c31204bb13337",
+        "type": "rshake-udp-parser",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "x": 180,
+        "y": 300,
+        "wires": [
+            [
+                "4ae5d247fe4be8fc",
+                "51a0bffc49c35719"
+            ]
+        ]
+    },
+    {
+        "id": "4ae5d247fe4be8fc",
+        "type": "function",
+        "z": "b1176b865b8cd3e5",
+        "name": "format plot values",
+        "func": "\nvar EVERY_N_PACKET = 20; // max = 24\nvar POINTS_PER_SECOND = 100 / EVERY_N_PACKET;\nvar KEEP_SECONDS = 60;\nvar KEY=\"f2_all_points\";\n\nvar MAX_POINTS = POINTS_PER_SECOND * KEEP_SECONDS;\n\nvar input = msg.payload;\n\nvar data = [{series:[\"P\"],\n    data:[],\n    labels:[\"Points\"]\n}];\n\nvar allPoints = flow.get(KEY);\nif(allPoints == undefined)\n    allPoints = [];\n\n\nfor(var i=0, step=EVERY_N_PACKET; i + step < input.packets.length; i += step) {\n    var o = {x: input.ts + i*10,\n             y: input.packets[i]};\n    allPoints.push(o);\n}\n\nif(allPoints.length > MAX_POINTS)\n    allPoints = allPoints.slice(\n        allPoints.length - MAX_POINTS, \n        allPoints.length\n    );\n\nflow.set(KEY, allPoints);\n\ndata[0].data.push(allPoints);\n\n\nmsg.payload = data;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 520,
+        "wires": [
+            [
+                "fee0b77133049589"
+            ]
+        ]
+    },
+    {
+        "id": "51a0bffc49c35719",
+        "type": "function",
+        "z": "b1176b865b8cd3e5",
+        "name": "Absolute Amplitude",
+        "func": "var acc = 0;\nvar num = 0;\nfor(const p of msg.payload.packets)\n{\n    acc += Math.abs(p);\n    num++;\n}\n\nacc /= num;\n\nmsg.payload = acc;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 440,
+        "wires": [
+            [
+                "6cf08e2ae617be1f",
+                "f2916a711882612d"
+            ]
+        ]
+    },
+    {
+        "id": "6cf08e2ae617be1f",
+        "type": "smooth",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "property": "payload",
+        "action": "mean",
+        "count": "25",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 500,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fee0b77133049589",
+        "type": "ui_chart",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "group": "744ade9a0881454c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Live Data R1ADD",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d91717",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 450,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2916a711882612d",
+        "type": "ui_gauge",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "group": "744ade9a0881454c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "R1ADD Shakemeter",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 560,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "0c656cc91fc5a850",
+        "type": "debug",
+        "z": "b1176b865b8cd3e5",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "2b852157060e7160",
+        "type": "switch",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "EHZ",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "b81c31204bb13337",
+                "83a047a9095ed35c"
+            ]
+        ]
+    },
+    {
+        "id": "18903d76458b562d",
+        "type": "switch",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "10000",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ebdac41dcd92042c",
+        "type": "change",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "83a047a9095ed35c",
+        "type": "json",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "property": "payload",
+        "action": "str",
+        "pretty": true,
+        "x": 430,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "092215a6863431f6",
+        "type": "telegram sender",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "bot": "e823e5d644ada045",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 900,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e36dad7c06888426",
+        "type": "inject",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload.type",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 700,
+        "y": 700,
+        "wires": [
+            [
+                "092215a6863431f6",
+                "bb88a0f55722ea29"
+            ]
+        ]
+    },
+    {
+        "id": "4af2159ee7f74095",
+        "type": "chatbot-telegram-send",
+        "z": "b1176b865b8cd3e5",
+        "bot": "",
+        "botProduction": "",
+        "track": false,
+        "passThrough": false,
+        "errorOutput": false,
+        "outputs": 0,
+        "x": 910,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "bb88a0f55722ea29",
+        "type": "telegrambot-notify",
+        "z": "b1176b865b8cd3e5",
+        "name": "",
+        "bot": "0c211b696d399bc0",
+        "chatId": "-837340870",
+        "message": "Woohoo! We did it!!!",
+        "parseMode": "",
+        "x": 940,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "aeb3bc9faa4fb1da",
+        "type": "debug",
+        "z": "52201046a8ce3dd1",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9eebbf15fcb2a147",
+        "type": "rtl_433",
+        "z": "52201046a8ce3dd1",
+        "name": "",
+        "device": "",
+        "frequency": "",
+        "protocols": "",
+        "flexgetter": "",
+        "expert": "",
+        "supressChirp": true,
+        "x": 250,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    }
+]
